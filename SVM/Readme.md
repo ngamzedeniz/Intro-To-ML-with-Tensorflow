@@ -7,13 +7,17 @@ Before you do that, let's go over the tools required to build this model.
 For your support vector machine model, you'll be using scikit-learn's SVC class. This class provides the functions to define and fit the model to your data.
 
 >>> from sklearn.svm import SVC
+
 >>> model = SVC()
+
 >>> model.fit(x_values, y_values)
 
 In the example above, the model variable is a support vector machine model that has been fitted to the data x_values and y_values. Fitting the model means finding the best boundary that fits the training data. Let's make two predictions using the model's predict() function.
 
 >>> print(model.predict([ [0.2, 0.8], [0.5, 0.4] ]))
+
 [[ 0., 1.]]
+
 The model returned an array of predictions, one prediction for each input array. The first input, [0.2, 0.8], got a prediction of 0.. The second input, [0.5, 0.4], got a prediction of 1..
 
 # Hyperparameters
